@@ -1,0 +1,389 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .yellow {
+    color: #ffc107;
+  }
+  
+  .green {
+    color: #4caf50;
+  }
+  
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height:1.2;
+  }
+  
+  .delivery-time {
+    font-weight: bold;
+  }
+  
+  .address {
+    color: #555;
+  }
+  
+  .dropdown {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px 1px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .login {
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .cart {
+    background-color: #f2f2f2;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+  
+  .cart-icon {
+    font-size: 16px;
+  }
+  
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .hero-image img {
+    max-height: 230px;
+    width: auto;
+    border-radius: 12px;
+  }
+  .image-grid-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    gap: 20px;
+  }
+  
+  .image-box {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-box:hover {
+    transform: scale(1.02);
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .category-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.category-box {
+    width: calc(33.33% - 10px);
+    max-width: 350px;
+    min-width: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.category-box:hover {
+    transform: translateY(-5px);
+}
+
+.category-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.category-box p {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Product Section */
+.product-section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.see-all {
+    color: #3aaa35;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.product-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #ddd transparent;
+}
+
+.product-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.product-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.product-container::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 6px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    width: 160px;
+    flex-shrink: 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.delivery-time {
+    font-size: 11px;
+    color: #3aaa35;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.product-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.weight {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.add-btn {
+    background-color: white;
+    border: 1px solid #3aaa35;
+    color: #3aaa35;
+    padding: 6px 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.add-btn:hover {
+    background-color: #3aaa35;
+    color: white;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links, .categories {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.links div, .categories div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.links a, .categories a {
+  font-size: 14px;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.links a:hover, .categories a:hover {
+  color: #333;
+}
+
+.dot {
+  color: #ff4d4d;
+  font-size: 10px;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ddd;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bottom-footer p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.download-app {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.download-app span {
+  font-size: 14px;
+  color: #666;
+  font-weight: 600;
+}
+
+.download-app img {
+  height: 36px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.social-icons a:hover {
+  background-color: #3aaa35;
+}
+
+.social-icons i {
+  font-size: 16px;
+}
+  
+  
